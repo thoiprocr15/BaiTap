@@ -1,0 +1,16 @@
+{
+  "keywordFileContentHash": "5890955CA4B68E71EF3A1265479F18BE",
+  "keywordClasses": [
+    {
+      "name": "testing.end",
+      "keywordMethods": [
+        {
+          "name": "closure",
+          "parameters": [],
+          "javadoc": ""
+        }
+      ]
+    }
+  ],
+  "javadocParsed": true
+}

@@ -1,0 +1,16 @@
+{
+  "keywordFileContentHash": "F9FBC70D8B3F3EA5DACA7D7AC61E91A2",
+  "keywordClasses": [
+    {
+      "name": "testing.start",
+      "keywordMethods": [
+        {
+          "name": "access",
+          "parameters": [],
+          "javadoc": ""
+        }
+      ]
+    }
+  ],
+  "javadocParsed": true
+}

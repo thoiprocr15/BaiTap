@@ -1,0 +1,16 @@
+{
+  "keywordFileContentHash": "5471388AA178AA33F8648955A2A470D9",
+  "keywordClasses": [
+    {
+      "name": "login.start",
+      "keywordMethods": [
+        {
+          "name": "access",
+          "parameters": [],
+          "javadoc": ""
+        }
+      ]
+    }
+  ],
+  "javadocParsed": true
+}
