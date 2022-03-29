@@ -6,12 +6,11 @@
    <elementGuidId>5f05633c-fd0e-495d-ba9a-f4732c97beff</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>BASIC</key>
-         <value></value>
+         <key>XPATH</key>
+         <value>//*[@id=&quot;dateOfBirth&quot;]/div[2]/div[2]/div/div/div[2]/div[1]/div[2]/div[1]/select</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>//div[@id='dateOfBirth']/div[2]/div[2]/div/div/div[2]/div/div[2]/div/select</value>
+         <key>BASIC</key>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

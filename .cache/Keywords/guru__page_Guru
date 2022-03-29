@@ -1,0 +1,53 @@
+{
+  "keywordFileContentHash": "3FDCAC7DA02D3DB5D818451B68A56E69",
+  "keywordClasses": [
+    {
+      "name": "guru.page_Guru",
+      "keywordMethods": [
+        {
+          "name": "open_Page",
+          "parameters": [],
+          "javadoc": ""
+        },
+        {
+          "name": "login",
+          "parameters": [],
+          "javadoc": ""
+        },
+        {
+          "name": "newCustomer",
+          "parameters": [
+            {
+              "name": "cusName_value",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "java.lang.String",
+                "unresolvedClassName": "String",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": false,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
+            },
+            {
+              "name": "gender",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "java.lang.String",
+                "unresolvedClassName": "String",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": false,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
+            }
+          ],
+          "javadoc": ""
+        }
+      ]
+    }
+  ],
+  "javadocParsed": true
+}

@@ -7,11 +7,10 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//*[contains(text(), '${text_label}')]//parent::div//following-sibling::div//input[@id='${text_id}'] </value>
+         <value>//*[@id='${id}']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

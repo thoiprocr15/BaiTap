@@ -9,4 +9,9 @@
       <initValue>'https://demoqa.com/'</initValue>
       <name>URL</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'https://demo.guru99.com/v1/'</initValue>
+      <name>URL_Guru</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>

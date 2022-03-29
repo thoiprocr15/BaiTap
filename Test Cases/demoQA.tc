@@ -27,18 +27,18 @@
       <name>email</name>
    </variable>
    <variable>
-      <defaultValue>'gender'</defaultValue>
-      <description></description>
-      <id>d4b38afc-6a1c-4423-89fa-9af006d9a3c1</id>
-      <masked>false</masked>
-      <name>gender</name>
-   </variable>
-   <variable>
       <defaultValue>'mobile'</defaultValue>
       <description></description>
       <id>89c0fbd8-fe31-47e0-9150-33eb9f382c10</id>
       <masked>false</masked>
       <name>mobile</name>
+   </variable>
+   <variable>
+      <defaultValue>'gender'</defaultValue>
+      <description></description>
+      <id>d4b38afc-6a1c-4423-89fa-9af006d9a3c1</id>
+      <masked>false</masked>
+      <name>gender</name>
    </variable>
    <variable>
       <defaultValue>'year_DOB'</defaultValue>
@@ -81,5 +81,33 @@
       <id>a360abf2-41ee-4ebd-9609-867cac3462ad</id>
       <masked>false</masked>
       <name>address</name>
+   </variable>
+   <variable>
+      <defaultValue>'state'</defaultValue>
+      <description></description>
+      <id>aaccd0fe-a503-4427-84df-8e5e3e7cc2a6</id>
+      <masked>false</masked>
+      <name>state</name>
+   </variable>
+   <variable>
+      <defaultValue>'city'</defaultValue>
+      <description></description>
+      <id>afc245c7-839d-41e8-8c3b-11adf00ce954</id>
+      <masked>false</masked>
+      <name>city</name>
+   </variable>
+   <variable>
+      <defaultValue>'screenshot'</defaultValue>
+      <description></description>
+      <id>7fdf188a-ece6-418d-a4f2-6eee2f954e88</id>
+      <masked>false</masked>
+      <name>screenshot</name>
+   </variable>
+   <variable>
+      <defaultValue>'expected_result'</defaultValue>
+      <description></description>
+      <id>27752bf2-5dcb-425d-bfa4-85ad961cffbe</id>
+      <masked>false</masked>
+      <name>expected_result</name>
    </variable>
 </TestCaseEntity>
