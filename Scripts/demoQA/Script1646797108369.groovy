@@ -21,7 +21,9 @@ CustomKeywords.'testing.pratice_Form.access'()
 
 CustomKeywords.'testing.pratice_Form.click_Form'()
 
-CustomKeywords.'testing.pratice_Form.enterValue'(firstName, lastName, email, gender, mobile, year_DOB, month_DOB, subject, 
+CustomKeywords.'testing.pratice_Form.enterValue'(
+	firstName, lastName, email, 
+	gender, mobile, year_DOB, month_DOB, subject, 
     hobbies, upload, address, state, city, screenshot)
 
 CustomKeywords.'testing.pratice_Form.end'(expected_result)

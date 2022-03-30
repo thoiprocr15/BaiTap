@@ -20,8 +20,8 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import org.openqa.selenium.Keys as Keys
 import internal.GlobalVariable
 
-public class pratice_Form {
-	
+public class pratice_Form{
+
 	@Keyword
 	def access() {
 		'Open Browser\r\n\r\n'
@@ -33,7 +33,7 @@ public class pratice_Form {
 		'Navigate to DemoQA Page'
 		WebUI.navigateToUrl(GlobalVariable.URL)
 	}
-	
+
 	private TestObject fName_inp = findTestObject('demoQA/input', [('id'):'firstName'])
 	private TestObject lName_inp = findTestObject('demoQA/input', [('id'):'lastName'])
 	private TestObject email_inp = findTestObject('demoQA/input', [('id') : 'userEmail'])
@@ -50,7 +50,7 @@ public class pratice_Form {
 	private TestObject address_txt = findTestObject('demoQA/textArea_Address', [('text_label') : 'Current Address', ('text_id') : 'currentAddress'])
 	private TestObject state_CB = findTestObject('demoQA/state_city_input', [('id') : 'state'])
 	private TestObject city_CB = findTestObject('demoQA/state_city_input', [('id') : 'city'])
-	
+
 	@Keyword
 	def click_Form() {
 		'Click Form'
@@ -58,10 +58,10 @@ public class pratice_Form {
 		'Click Pratice Form'
 		WebUI.click(findTestObject('demoQA/li_Pratice_Form'))
 	}
-	
+
 	@Keyword
 	def enterValue(String fName_value, String lName_value, String email_value, String gender_value, String mobile_value, String year_value,
-			String month_value, String subject_value, String hobbies_value, 
+			String month_value, String subject_value, String hobbies_value,
 			String upload_value, String address_value, String state_value, String city_value, String screenshot) {
 		'Fill in Name fields'
 		WebUI.setText(fName_inp, fName_value)
@@ -122,54 +122,54 @@ public class pratice_Form {
 		else if(hobbies_value.equals('Music'))
 			WebUI.check(findTestObject('demoQA/label_hobbies', [('value') : '3']))
 		else if(hobbies_value.equals('Sports, Reading'))
-			{
-				WebUI.check(findTestObject('demoQA/label_hobbies', [('value') : '1']))
-				WebUI.check(findTestObject('demoQA/label_hobbies', [('value') : '2']))
-			}
+		{
+			WebUI.check(findTestObject('demoQA/label_hobbies', [('value') : '1']))
+			WebUI.check(findTestObject('demoQA/label_hobbies', [('value') : '2']))
+		}
 		else if(hobbies_value.equals('Sports, Music'))
-			{
-				WebUI.check(findTestObject('demoQA/label_hobbies', [('value') : '1']))
-				WebUI.check(findTestObject('demoQA/label_hobbies', [('value') : '3']))
-			}
+		{
+			WebUI.check(findTestObject('demoQA/label_hobbies', [('value') : '1']))
+			WebUI.check(findTestObject('demoQA/label_hobbies', [('value') : '3']))
+		}
 		else if(hobbies_value.equals('Reading, Music'))
-			{
-				WebUI.check(findTestObject('demoQA/label_hobbies', [('value') : '2']))
-				WebUI.check(findTestObject('demoQA/label_hobbies', [('value') : '3']))
-			}
+		{
+			WebUI.check(findTestObject('demoQA/label_hobbies', [('value') : '2']))
+			WebUI.check(findTestObject('demoQA/label_hobbies', [('value') : '3']))
+		}
 		else if(hobbies_value.equals('All'))
-			{
-				WebUI.check(findTestObject('demoQA/label_hobbies', [('value') : '1']))
-				WebUI.check(findTestObject('demoQA/label_hobbies', [('value') : '2']))
-				WebUI.check(findTestObject('demoQA/label_hobbies', [('value') : '3']))
-			}
-		
+		{
+			WebUI.check(findTestObject('demoQA/label_hobbies', [('value') : '1']))
+			WebUI.check(findTestObject('demoQA/label_hobbies', [('value') : '2']))
+			WebUI.check(findTestObject('demoQA/label_hobbies', [('value') : '3']))
+		}
+
 		'Upload Picture'
 		WebUI.setText(upload_btn, upload_value)
-		
+
 		'Fill in Address field'
 		WebUI.setText(address_txt, address_value)
-		
+
 		'Choose State and City'
 		WebUI.setText(state_CB, state_value)
 		WebUI.sendKeys(state_CB, Keys.chord(Keys.TAB))
 		WebUI.setText(city_CB, city_value)
 		WebUI.sendKeys(city_CB, Keys.chord(Keys.TAB, Keys.ENTER))
-		
+
 		WebUI.takeFullPageScreenshotAsCheckpoint(screenshot)
 	}
-	
+
 	private TestObject modal_lb = findTestObject('demoQA/Modal_label')
-	
-		@Keyword
-		def end(String expected_result) {
-			'Get text from Modal Label\r\n'
-			String actual_result = WebUI.getText(modal_lb)
-	
-			'Compare Actual result and Expected result\r\n'
-			WebUI.verifyEqual(actual_result, expected_result)
-	
-			'Close Browser\r\n'
-			WebUI.closeBrowser()
-		}
+
+	@Keyword
+	def end(String expected_result) {
+		'Get text from Modal Label\r\n'
+		String actual_result = WebUI.getText(modal_lb)
+
+		'Compare Actual result and Expected result\r\n'
+		WebUI.verifyEqual(actual_result, expected_result)
+
+		'Close Browser\r\n'
+		WebUI.closeBrowser()
+	}
 }
 
